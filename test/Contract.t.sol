@@ -2,16 +2,16 @@
 pragma solidity ^0.8.13;
 
 import {Test} from "forge-std/Test.sol";
-import {Contract} from "../src/Contract.sol";
+import {MyToken} from "../src/MyToken.sol";
 
 contract TestContract is Test {
-    Contract c;
+    MyToken c;
 
     function setUp() public {
-        c = new Contract();
+        c = new MyToken("My Token", "MTK");
     }
 
-    function testBar() public {
+    function testBar() public pure {
         assertEq(uint256(1), uint256(1), "ok");
     }
 

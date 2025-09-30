@@ -1,2 +1,11 @@
 [profile.ci.fuzz]
 runs = 10_000
+
+
+[profile.default]
+rpc_url = "http://localhost:8545"
+account = "anvil"
+
+[profile.sepolia]
+rpc_url = "https://eth-sepolia.g.alchemy.com/v2/kBC5i0vKDTL7S_ldEOHKQ"
+account = "sepolia"
